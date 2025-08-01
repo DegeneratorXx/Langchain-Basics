@@ -5,3 +5,7 @@ streamlit
 langchain_community
 langserve
 Ollama
+fastapi
+uvicorn
+sse_starlette
+dotenv

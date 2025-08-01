@@ -8,6 +8,12 @@ import dotenv as env
 
 env.load_dotenv()
 
+# --- Start of new debug code ---
+print(f"LANGCHAIN_API_KEY: {os.getenv('LANGCHAIN_API_KEY')}")
+print(f"LANGCHAIN_PROJECT: {os.getenv('LANGCHAIN_PROJECT')}")
+# --- End of new debug code ---
+
+
 # env variable call
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"] = "True"

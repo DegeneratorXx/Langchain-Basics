@@ -39,7 +39,7 @@ class HistoricalSummaryRequest(BaseModel):
 # Set up the LangChain components
 ollama_llm = OllamaLLM(model="gemma3:4b")
 historical_prompt = ChatPromptTemplate.from_template(
-    "Write me a historical overview of this city/place: {place}"
+    "Write me a historical overview of this city/place: {place}. The summary should not be too big just short summary in around 300-400 words. "
 )
 
 # Create the LangChain processing chain
@@ -78,9 +78,10 @@ async def get_historical_summary(request: HistoricalSummaryRequest):
 
 
 # Server startup configuration
+# Server startup configuration
 if __name__ == "__main__":
     uvicorn.run(
-        "1:app",  # Import string format for reload to work
+        "app:app",  # Use import string format for reload to work
         host="localhost", 
         port=8000,
         reload=True  # Enable auto-reload during development

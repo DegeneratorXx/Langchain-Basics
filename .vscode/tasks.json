@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Python App",
+			"type": "shell",
+			"command": "/opt/homebrew/Caskroom/miniconda/base/bin/conda",
+			"args": [
+				"run",
+				"-p",
+				"/Users/lakshitkhandelwal/mpl/LangChain/venv",
+				"--no-capture-output",
+				"python",
+				"${file}"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			]
+		}
+	]
+}

@@ -1,0 +1,13 @@
+prefix=/Users/lakshitkhandelwal/mpl/LangChain/venv
+exec_prefix=/Users/lakshitkhandelwal/mpl/LangChain/venv
+libdir=/Users/lakshitkhandelwal/mpl/LangChain/venv/lib
+sharedlibdir=/Users/lakshitkhandelwal/mpl/LangChain/venv/lib
+includedir=/Users/lakshitkhandelwal/mpl/LangChain/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

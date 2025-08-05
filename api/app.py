@@ -6,7 +6,7 @@ summaries of cities and places using a local Ollama LLM model.
 """
 
 from langchain_core.prompts import ChatPromptTemplate
-# from langserve import add_routes # Commented out to avoid OpenAPI schema issues
+from langserve import add_routes
 from fastapi import FastAPI, HTTPException
 from langchain_ollama import OllamaLLM  # Updated import to use the new package
 from pydantic import BaseModel

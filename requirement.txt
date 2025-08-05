@@ -9,3 +9,6 @@ fastapi
 uvicorn
 sse_starlette
 dotenv
+bs4
+pypdf
+faiss-cpu
